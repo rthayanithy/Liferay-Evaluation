@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="com.meera.db">
+	<author>E5410</author>
+	<namespace>webservices</namespace>
+<entity name="Employee" local-service="true" remote-service="true">
+		<column name="emplyeeId" type="long" primary="true" />
+		<column name="emplyeeName" type="String" />
+		<column name="employeeDesignation" type="String" />
+		<order by="asc">
+			<order-column name="emplyeeId" />
+		</order>
+		<finder name="emplyeeName" return-type="Employee">
+			<finder-column name="emplyeeName" />
+		</finder>
+	</entity>
+</service-builder>

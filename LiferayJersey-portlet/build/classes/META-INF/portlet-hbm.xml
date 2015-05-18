@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.meera.jersey.services.model.Person" />
+	<class name="com.meera.jersey.services.model.impl.PersonImpl" table="meera_Person">
+		<cache usage="read-write" />
+		<id name="personId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="personName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="personAddress" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

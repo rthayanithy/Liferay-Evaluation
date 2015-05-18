@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.meera.jersey.services.model.Person">
+		<field name="personId" type="long" />
+		<field name="personName" type="String" />
+		<field name="personAddress" type="String" />
+	</model>
+</model-hints>

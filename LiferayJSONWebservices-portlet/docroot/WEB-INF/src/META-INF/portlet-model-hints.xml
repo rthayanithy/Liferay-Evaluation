@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.meera.db.model.Employee">
+		<field name="emplyeeId" type="long" />
+		<field name="emplyeeName" type="String" />
+		<field name="employeeDesignation" type="String" />
+	</model>
+</model-hints>
